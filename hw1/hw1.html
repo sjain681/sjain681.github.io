@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<LINK rel="stylesheet" href="mystyle.css" type="text/css">
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PREVIEW</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<script>
+    fetch('https://sjain681.github.io/hw1/data.json')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            appendData(data);
+        })
+        .catch(function (err) {
+            console.log('error: ' + err);
+        })
+
+    function appendData(data) {
+        let a = "https://sjain681.github.io/hw1/"
+        var mainContainer1 = document.getElementById("myData1");
+        var dataSection1 = data["section2"];
+        for (var i = 0; i < dataSection1.length; i++) {
+
+            var newContainer = document.createElement("div");
+            newContainer.className = "cards"
+
+            var img1 = document.createElement("IMG");
+            let imgUrl1 = a + data["section2"][i]["image"]
+            img1.setAttribute("src", imgUrl1);
+            img1.setAttribute("width", "250px");
+            img1.setAttribute("height", "150px");
+            newContainer.appendChild(img1);
+
+            var head1 = document.createElement("h1");
+            var heading1 = document.createTextNode(data["section2"][i]["heading"]);
+            head1.style.fontFamily = "Comfortaa, ui-rounded";
+            head1.style.fontSize = "15px";
+            head1.appendChild(heading1);
+            newContainer.appendChild(head1);
+
+            var text1 = document.createElement("p");
+            var t1 = document.createTextNode(data["section2"][i]["text"]);
+            text1.style.fontFamily = "Comfortaa, ui-rounded";
+            text1.style.fontSize = "12px";
+            text1.appendChild(t1);
+            newContainer.appendChild(text1);
+
+            mainContainer1.appendChild(newContainer);
+
+        }
+
+        var mainContainer21 = document.getElementById("myData21");
+        var img2 = document.createElement("IMG");
+        let imgUrl2 = a + "lasky.png"
+        img2.setAttribute("src", imgUrl2);
+        img2.setAttribute("width", "440");
+        img2.setAttribute("height", "228");
+        mainContainer21.appendChild(img2);
+
+        var mainContainer22 = document.getElementById("myData22");
+        // var text2 = document.createElement("p");
+        var t2 = data["section3"]["text"];
+        for (var k = 0; k < t2.length; k++) {
+            var text2 = document.createElement("p");
+            text2.appendChild(document.createTextNode(data["section3"]["text"][k]));
+            mainContainer22.appendChild(text2);
+        }
+
+        var mainContainer3 = document.getElementById("myData3");
+        var mainContainer4 = document.getElementById("myData4");
+        // var dataSection3 = data["section4"];
+        // for (var j = 0; j < 1; j++) {
+
+        var newContainer2 = document.createElement("div");
+
+        var img3 = document.createElement("IMG");
+        let imgUrl3 = a + data["section4"][0]["image"]
+        img3.setAttribute("src", imgUrl3);
+        img3.setAttribute("width", "304");
+        img3.setAttribute("height", "228");
+        newContainer2.appendChild(img3);
+
+        mainContainer3.appendChild(newContainer2);
+
+        var newContainer3 = document.createElement("div");
+
+        var head3 = document.createElement("h1");
+        var heading3 = document.createTextNode(data["section4"][0]["heading"]);
+        head3.appendChild(heading3);
+        newContainer3.appendChild(head3);
+
+        var text3 = document.createElement("p");
+        var t3 = document.createTextNode(data["section4"][0]["text"]);
+        text3.appendChild(t3);
+        newContainer3.appendChild(text3);
+
+        mainContainer4.appendChild(newContainer3);
+
+
+        var mainContainer5 = document.getElementById("myData5");
+        var mainContainer6 = document.getElementById("myData6");
+        // for (var l = 1; l < 2; j++) {
+
+        var newContainer4 = document.createElement("div");
+
+        var img4 = document.createElement("IMG");
+        let imgUrl4 = a + data["section4"][1]["image"]
+        img4.setAttribute("src", imgUrl4);
+        img4.setAttribute("width", "354");
+        img4.setAttribute("height", "228");
+        newContainer4.appendChild(img4);
+
+        mainContainer5.appendChild(newContainer4);
+
+        var newContainer5 = document.createElement("div");
+        var newContainer6 = document.createElement("div");
+
+        var head4 = document.createElement("h1");
+        var heading4 = document.createTextNode(data["section4"][1]["heading"]);
+        head4.appendChild(heading4);
+        newContainer5.appendChild(head4);
+        newContainer5.className = "right"
+
+        var text4 = document.createElement("p");
+        var t4 = document.createTextNode(data["section4"][1]["text"]);
+        text4.appendChild(t4);
+        newContainer6.appendChild(text4);
+        newContainer6.className = "justify"
+
+        mainContainer6.appendChild(newContainer5);
+        mainContainer6.appendChild(newContainer6);
+
+    }
+</script>
+<div class="nav-bar">
+    <a href="hw1.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a style="padding-right: 0" href="explore.html">Contact</a>
+</div>
+
+<img class="beverly" src="https://sjain681.github.io/hw1/rodeo-drive.jpg" alt="rodeo"/>
+<div class="scenic-view">
+    LA - The City of Angels
+</div>
+
+<div class="container">
+    <div class="flex-container">
+        <div id="myData1"></div>
+    </div>
+</div>
+
+<div class="lasky-big">
+    <div class="lasky" id="myData21"></div>
+    <div class="lasky-font" id="myData22"></div>
+</div>
+
+<div class="hollywood-big">
+    <div class="hollywood" id="myData3"></div>
+    <div class="hollywood-font" id="myData4"></div>
+</div>
+
+<div class="beaches-big">
+    <div class="beaches" id="myData5"></div>
+    <div class="beaches-font" id="myData6"></div>
+</div>
+
+<footer class="footer">
+    <div style="display: flex">
+        <div class="foot1">
+            <p class="quote">Tip the world over on its side and everything loose will land in Los Angeles</p>
+            <p class="author"> - Frank Lloyd Wright</p>
+        </div>
+        <div class="foot2">
+            <p>Designed By<br>
+            <p>Saurabh Jain<br><br>
+                <a href="mailto:sjain681@usc.edu" style="color: white;text-decoration: none">sjain681@usc.edu</a><br>
+                <a href="tel:(+1) 201 406 8804" style="color: white;text-decoration: none">(+1) 201 406 8804</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

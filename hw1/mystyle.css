@@ -1,0 +1,290 @@
+body {
+    /*overflow-x: hidden;*/
+    /*resize: block;*/
+    background: #212529;
+    min-width: 1444px;
+    margin: 0;
+
+}
+
+.nav-bar {
+    /*overflow-y: hidden;*/
+    width: 1374px;
+    height: 25px;
+    text-align: center;
+    background-color: black;
+    padding: 35px;
+    position: center;
+    border-top: 2px solid orange;
+
+}
+
+.nav-bar a {
+    /*overflow-y: hidden;*/
+    font-family: Comfortaa, ui-rounded;
+    font-weight: normal;
+    color: white;
+    width: 1444px;
+    text-align: center;
+    padding-right: 80px;
+    text-decoration: none;
+    font-size: 30px;
+    text-shadow: 1.5px 1px orange;
+}
+
+.beverly {
+    /*overflow-y: hidden;*/
+    width: 1444px;
+    height: 350px;
+    object-fit: cover;
+    object-position: 0px -520px;
+}
+
+.scenic-view {
+    /*overflow-y: hidden;*/
+    font-family: Comfortaa, ui-rounded;
+    position: absolute;
+    text-align: center;
+    top: 220px;
+    left: 517px;
+    font-size: 35px;
+    color: orange;
+    text-shadow: 1.5px 1px white;
+}
+
+.container {
+    /*overflow-y: hidden;*/
+    width: 904px;
+    margin: 100px;
+    margin-left: 290px;
+    text-align: -moz-center;
+}
+
+.flex-container {
+    /*overflow-y: hidden;*/
+    column-count: 3;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.cards{
+    /*overflow-y: hidden;*/
+    height: 300px;
+    width: 250px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.lasky-big{
+    /*overflow-y: hidden;*/
+    background-color: black;
+    height: 800px;
+    width: 1444px;
+}
+
+.lasky {
+    /*overflow-y: hidden;*/
+    float: right;
+    width: 720px;
+    height: 530px;
+    margin-left: 30px;
+    margin-bottom: 80px;
+    margin-top: 250px;
+}
+
+.lasky-font {
+    /*overflow-y: hidden;*/
+    font-family: Comfortaa, ui-rounded;
+    font-size: 13px;
+    margin-left: 300px;
+    padding-top: 250px;
+    text-align: justify;
+    /*margin-bottom: 80px;*/
+    color: white;
+}
+
+.section3-big{
+    /*overflow-y: hidden;*/
+    height: 800px;
+    width: 1444px;
+}
+
+.section3 {
+    /*overflow-y: hidden;*/
+    float: right;
+    width: 720px;
+    height: 530px;
+    margin-left: 30px;
+    margin-bottom: 80px;
+    margin-top: 250px;
+}
+
+.section3-font {
+    /*overflow-y: hidden;*/
+    font-family: Comfortaa, ui-rounded;
+    font-size: 13px;
+    margin-left: 300px;
+    padding-top: 250px;
+    text-align: justify;
+    /*margin-bottom: 80px;*/
+    color: white;
+}
+
+.hollywood-big{
+    /*overflow-y: hidden;*/
+    height: 400px;
+    width: 1444px;
+}
+
+.hollywood {
+    /*overflow-y: hidden;*/
+    float: left;
+    height: auto;
+    margin-right: 30px;
+    margin-left: 300px;
+    margin-top: 150px;
+}
+
+.hollywood-font {
+    /*overflow-y: hidden;*/
+    font-family: Comfortaa, ui-rounded;
+    font-size: 13px;
+    margin-right: 250px;
+    padding-top: 150px;
+    text-align: justify;
+    color: white;
+}
+.beaches-big{
+    /*overflow-y: hidden;*/
+    height: 400px;
+    width: 1444px;
+}
+.beaches {
+    /*overflow-y: hidden;*/
+    float: right;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 250px;
+}
+
+.beaches-font {
+    /*overflow-y: hidden;*/
+    font-family: Comfortaa, ui-rounded;
+    font-size: 13px;
+    margin-left: 300px;
+    /*text-align: justify;*/
+    color: white;
+}
+.right{
+    text-align: right;
+}
+.justify{
+    text-align: justify;
+}
+.cards2{
+    /*overflow-y: hidden;*/
+    float: right;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+.footer{
+    /*overflow-y: hidden;*/
+    background-color: black;
+    height: 200px;
+    width: 1444px;
+    font-family: Comfortaa, ui-rounded;
+    text-decoration: none;
+    color: white;
+}
+.foot1{
+    /*overflow-y: hidden;*/
+    width: 722px;
+    height: 200px;
+}
+.foot2{
+    /*overflow-y: hidden;*/
+    width: 722px;
+    height: 200px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.quote{
+    /*overflow-y: hidden;*/
+    height: 50px;
+    width: 490px;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 200px;
+}
+.author{
+    /*overflow-y: hidden;*/
+    text-align: center;
+    height: 50px;
+    width: 490px;
+    padding-left: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.element-with-background-image {
+    position: absolute;
+    background-image: url("https://sjain681.github.io/hw1/404-featured.jpg");
+    width: 1444px;
+    height: 380px;
+    background-size: cover;
+    background-position: 0 -220px;
+}
+
+.color-overlay {
+    top: 0;
+    left: 0;
+    width: 1444px;
+    height: 380px;
+    background-position: 0 -400px;
+    background-color: #d97e23;
+    opacity: 0.5;
+}
+
+.pagenotfound {
+    font-family: Comfortaa, ui-rounded;
+    position: absolute;
+    text-align: center;
+    top: 260px;
+    left: 580px;
+    font-size: 35px;
+    color: black;
+}
+.doesnotexist {
+    font-family: Comfortaa, ui-rounded;
+    text-align: center;
+    width: 1444px;
+    margin-top: 170px;
+    top: 260px;
+    height: 280px;
+    align-items: center;
+    /*left: 580px;*/
+    font-size: 30px;
+    color: white;
+}
